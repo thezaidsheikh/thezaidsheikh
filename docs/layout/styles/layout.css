@@ -362,7 +362,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#97A9BD !important;}
 #introblocks .elements li article a h6{color:#FFFFFF; background-color:#97A9BD;}/* Blue */
 #introblocks .elements li article a i{color:#97A9BD; background-color:#FFFFFF;}/* Blue */
 #introblocks .elements li article:hover{color:#474747; background-color:#FFFFFF !important;}
-#introblocks .elements li article a h6:hover{color:#474747; background-color:#FFFFFF !important;}
+#introblocks .elements li article:hover a h6{color:#474747; background-color:#FFFFFF !important;}
 #introblocks .elements li article:hover a i{color:#FFFFFF !important; background-color:#97A9BD;}
 #introblocks .elements li:nth-child(2) article, #introblocks .elements li:nth-child(2) article:hover a i{background-color:#A197BD;}/* Purple */
 #introblocks .elements li:nth-child(2) article a i{color:#A197BD;}/* Purple */
