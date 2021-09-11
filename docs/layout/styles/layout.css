@@ -364,12 +364,22 @@ input:focus, textarea:focus, *:required:focus{border-color:#97A9BD !important;}
 #introblocks .elements li article:hover{color:#474747; background-color:#FFFFFF !important;}
 #introblocks .elements li article:hover a h6{color:#474747; background-color:#FFFFFF !important;}
 #introblocks .elements li article:hover a i{color:#FFFFFF !important; background-color:#97A9BD;}
+
 #introblocks .elements li:nth-child(2) article, #introblocks .elements li:nth-child(2) article:hover a i{background-color:#A197BD;}/* Purple */
 #introblocks .elements li:nth-child(2) article a i{color:#A197BD;}/* Purple */
+#introblocks .elements li:nth-child(2) article, #introblocks .elements li:nth-child(2) article:hover a h6{background-color:#A197BD;}/* Purple */
+#introblocks .elements li:nth-child(2) article a h6{color:#A197BD;}/* Purple */
+
 #introblocks .elements li:nth-child(3) article, #introblocks .elements li:nth-child(3) article:hover a i{background-color:#BDA697;}/* Brown */
 #introblocks .elements li:nth-child(3) article a i{color:#BDA697;}/* Brown */
+#introblocks .elements li:nth-child(3) article, #introblocks .elements li:nth-child(3) article:hover a h6{background-color:#BDA697;}/* Brown */
+#introblocks .elements li:nth-child(3) article a h6{color:#BDA697;}/* Brown */
+
 #introblocks .elements li:nth-child(4) article, #introblocks .elements li:nth-child(4) article:hover a i{background-color:#97BDAB;}/* Green */
 #introblocks .elements li:nth-child(4) article a i{color:#97BDAB;}/* Green */
+#introblocks .elements li:nth-child(4) article, #introblocks .elements li:nth-child(4) article:hover a h6{background-color:#97BDAB;}/* Green */
+#introblocks .elements li:nth-child(4) article a h6{color:#97BDAB;}/* Green */
+
 /* ###### END DELETE ###### */
 
 .shout figure figcaption a{color:inherit; background-color:inherit; border-color:#D7D7D7;}
