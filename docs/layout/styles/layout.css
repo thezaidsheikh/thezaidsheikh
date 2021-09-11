@@ -367,7 +367,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#97A9BD !important;}
 
 #introblocks .elements li:nth-child(2) article, #introblocks .elements li:nth-child(2) article:hover a i{background-color:#A197BD;}/* Purple */
 #introblocks .elements li:nth-child(2) article a i{color:#A197BD;}/* Purple */
-#introblocks .elements li:nth-child(2) article, #introblocks .elements li:nth-child(2) article:hover a h6{color:#474747; background-color:#FFFFFF !important;}/* Purple */
+#introblocks .elements li:nth-child(2) article, #introblocks .elements li:nth-child(2) article:hover a h6{color:#474747; background-color:#A197BD;}/* Purple */
 #introblocks .elements li:nth-child(2) article a h6{color:#FFFFFF;background-color:#A197BD;}/* Purple */
 
 #introblocks .elements li:nth-child(3) article, #introblocks .elements li:nth-child(3) article:hover a i{background-color:#BDA697;}/* Brown */
