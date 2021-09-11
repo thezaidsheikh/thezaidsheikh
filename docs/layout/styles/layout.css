@@ -359,6 +359,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#97A9BD !important;}
 
 /* ###### DELETE THE FOLLOWING IF ONLY THE DEFAULT COLOUR IS REQUIRED ###### */
 #introblocks .elements li article{color:#FFFFFF; background-color:#97A9BD;}/* Blue */
+#introblocks .elements li article a h6{color:#FFFFFF; background-color:#97A9BD;}/* Blue */
 #introblocks .elements li article a i{color:#97A9BD; background-color:#FFFFFF;}/* Blue */
 #introblocks .elements li article:hover{color:#474747; background-color:#FFFFFF !important;}
 #introblocks .elements li article:hover a i{color:#FFFFFF !important; background-color:#97A9BD;}
