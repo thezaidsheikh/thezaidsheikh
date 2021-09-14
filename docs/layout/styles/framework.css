@@ -38,7 +38,7 @@ html, body{margin:0; padding:0; font-size:14px; line-height:1.6em;}
 .logoname::first-letter, .logoname span{margin:0 5px; font-size:2.4rem; font-weight:700; text-transform:uppercase;}
 .logoname::first-letter{margin-left:0;}
 
-.btn{display:inline-block; padding:8px 18px 10px; text-transform:uppercase; border:1px solid;}
+.btn{display:inline-block; padding:8px 18px 10px; text-transform:uppercase; border:1px solid;border-radius: 50px;}
 
 blockquote{display:block; position:relative; width:100%; margin:0; padding:30px; line-height:1.4; z-index:1;}
 blockquote::before{display:block; position:absolute; top:0; left:0; font-family:"Font Awesome\ 5 Free"; font-weight:900; font-size:60px; line-height:60px; content:"\f10d"; z-index:-1;}
