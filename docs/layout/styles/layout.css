@@ -323,7 +323,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#97A9BD !important;}
 	.gradient{background:linear-gradient(to bottom, #F4F4F4 24%, #FFFFFF 19%, #FFFFFF 100%);}
 }
 
-.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#97A9BD; border-color:#97A9BD;}
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#fc9803; border-color:#fc9803;}
 .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
 
 .imgover:hover::before{background-color:rgba(151,169,189,.5);/* #97A9BD */}
