@@ -565,10 +565,7 @@ html {
 
 
 
-#test p {
-    margin-top: 25px;
-    font-size: 21px;
-    text-align: center;
+#test h3 {
     animation: fadein 10s;
     -moz-animation: fadein 10s; /* Firefox */
     -webkit-animation: fadein 10s; /* Safari and Chrome */
