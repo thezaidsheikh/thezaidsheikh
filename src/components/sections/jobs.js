@@ -164,6 +164,12 @@ const StyledTabPanel = styled.div`
   }
 `;
 
+const AddScroll = styled.div`
+  width: 100%;
+  height: 180px;
+  overflow: auto;
+`;
+
 const Jobs = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -261,7 +267,8 @@ const Jobs = () => {
                   role="tab"
                   tabIndex={activeTabId === i ? '0' : '-1'}
                   aria-selected={activeTabId === i ? true : false}
-                  aria-controls={`panel-${i}`}>
+                  aria-controls={`panel-${i}`}
+                >
                   <span>{company}</span>
                 </StyledTabButton>
               );
@@ -283,7 +290,8 @@ const Jobs = () => {
                     tabIndex={activeTabId === i ? '0' : '-1'}
                     aria-labelledby={`tab-${i}`}
                     aria-hidden={activeTabId !== i}
-                    hidden={activeTabId !== i}>
+                    hidden={activeTabId !== i}
+                  >
                     <h3>
                       <span>{title}</span>
                       <span className="company">
@@ -296,7 +304,7 @@ const Jobs = () => {
 
                     <p className="range">{range}</p>
 
-                    <div dangerouslySetInnerHTML={{ __html: html }} />
+                    <AddScroll dangerouslySetInnerHTML={{ __html: html }} className="addscroll" />
                   </StyledTabPanel>
                 </CSSTransition>
               );

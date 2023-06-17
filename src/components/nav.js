@@ -125,6 +125,9 @@ const StyledLinks = styled.div`
     margin-left: 15px;
     font-size: var(--fz-xs);
   }
+  .resume-button:hover {
+    background-position: left;
+  }
 `;
 
 const Nav = ({ isHome }) => {

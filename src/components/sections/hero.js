@@ -3,6 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
+import { email } from '@config';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -43,6 +44,9 @@ const StyledHeroSection = styled.section`
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
+    &:hover {
+      background-position: left;
+    }
   }
 
   ul.skills-list {
@@ -72,6 +76,14 @@ const StyledHeroSection = styled.section`
     }
   }
 `;
+// const Button = styled.button`
+//   ${({ theme }) => theme.mixins.smallButton};
+//   margin: 1em;
+//   font-size: var(--fz-xs);
+//   &:hover {
+//     background-position: left;
+//   }
+// `;
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -143,6 +155,15 @@ const Hero = () => {
                 </CSSTransition>
               ))}
           </ul>
+          <CSSTransition classNames="fadeup" timeout={loaderDelay}>
+            <div style={{ transitionDelay: `1000ms` }}>
+              <a className="email-link" href={`mailto:${email}`}>
+                Hire Me!
+              </a>
+              {/* <Button>Hire Me!</Button>
+              <Button>Primary</Button> */}
+            </div>
+          </CSSTransition>
         </TransitionGroup>
       )}
     </StyledHeroSection>

@@ -5,6 +5,8 @@ const button = css`
   background-color: transparent;
   border: 1px solid var(--green);
   border-radius: var(--border-radius);
+  background: linear-gradient(to left, transparent 50%, var(--green-tint) 50%) right;
+  background-size: 200% 100%;
   font-size: var(--fz-xs);
   font-family: var(--font-mono);
   line-height: 1;
@@ -90,6 +92,8 @@ const mixins = {
   smallButton: css`
     color: var(--green);
     background-color: transparent;
+    background: linear-gradient(to left, transparent 50%, var(--green-tint) 50%) right;
+    background-size: 200% 100%;
     border: 1px solid var(--green);
     border-radius: var(--border-radius);
     padding: 0.75rem 1rem;
@@ -113,6 +117,8 @@ const mixins = {
   bigButton: css`
     color: var(--green);
     background-color: transparent;
+    background: linear-gradient(to left, transparent 50%, var(--green-tint) 50%) right;
+    background-size: 200% 100%;
     border: 1px solid var(--green);
     border-radius: var(--border-radius);
     padding: 1.25rem 1.75rem;
