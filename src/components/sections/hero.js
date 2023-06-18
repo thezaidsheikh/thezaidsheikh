@@ -76,14 +76,6 @@ const StyledHeroSection = styled.section`
     }
   }
 `;
-// const Button = styled.button`
-//   ${({ theme }) => theme.mixins.smallButton};
-//   margin: 1em;
-//   font-size: var(--fz-xs);
-//   &:hover {
-//     background-position: left;
-//   }
-// `;
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -110,19 +102,27 @@ const Hero = () => {
     </>
   );
   const five = <p>Here are a few technologies I’ve been working with recently:</p>;
-  const skills = [
-    'JavaScript (ES6+)',
-    'TypeScript',
-    'Node.JS',
-    'MongoDB',
-    'MySQL',
-    'Docker',
-    'Kubernetes',
-    'AWS',
-    'Microservices',
-    'Redis',
-  ];
-  const items = [one, two, three, four, five];
+  const six = (
+    <ul className="skills-list">
+      <li>JavaScript (ES6+)</li>
+      <li>TypeScript</li>
+      <li>Node.JS</li>
+      <li>MongoDB</li>
+      <li>MySQL</li>
+      <li>Docker</li>
+      <li>Kubernetes</li>
+      <li>AWS</li>
+      <li>Microservices</li>
+      <li>Redis</li>
+    </ul>
+  );
+  const seven = (
+    <a className="email-link" href={`mailto:${email}`}>
+      Hire Me!
+    </a>
+  );
+
+  const items = [one, two, three, four, five, six, seven];
 
   return (
     <StyledHeroSection>
@@ -131,11 +131,6 @@ const Hero = () => {
           {items.map((item, i) => (
             <div key={i}>{item}</div>
           ))}
-          <ul className="skills-list">
-            {skills.map((skill, i) => (
-              <li key={i}>{skill}</li>
-            ))}
-          </ul>
         </>
       ) : (
         <TransitionGroup component={null}>
@@ -145,25 +140,6 @@ const Hero = () => {
                 <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
               </CSSTransition>
             ))}
-          <ul className="skills-list">
-            {isMounted &&
-              skills.map((skill, i) => (
-                <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
-                  <li key={i} style={{ transitionDelay: `${i + 1}00ms` }}>
-                    {skill}
-                  </li>
-                </CSSTransition>
-              ))}
-          </ul>
-          <CSSTransition classNames="fadeup" timeout={loaderDelay}>
-            <div style={{ transitionDelay: `1000ms` }}>
-              <a className="email-link" href={`mailto:${email}`}>
-                Hire Me!
-              </a>
-              {/* <Button>Hire Me!</Button>
-              <Button>Primary</Button> */}
-            </div>
-          </CSSTransition>
         </TransitionGroup>
       )}
     </StyledHeroSection>
