@@ -1,6 +1,6 @@
 ---
 date: '2021-05-16'
-title: 'Software Developer'
+title: 'Senior Software Developer'
 company: 'LMS Solution Pvt Ltd'
 location: 'Indore, India'
 range: 'December 2021 - Present'
