@@ -1,4 +1,4 @@
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, Mousewheel, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styled from 'styled-components';
 import React from 'react';
@@ -48,37 +48,38 @@ const StyledTabPanel = styled.div`
 
 const AddScroll = styled.div`
   width: 100%;
-  height: 180px;
-  overflow: auto;
 `;
 
 export const Slider = ({ slides }) => (
-  <Swiper modules={[Navigation, Pagination, Scrollbar, A11y]} pagination={{ clickable: true }}>
+  <Swiper
+    mousewheel={true}
+    modules={[Navigation, Pagination, Scrollbar, Mousewheel, A11y]}
+    pagination={{ clickable: true }}
+  >
     <StyledTabPanels>
       {slides &&
-          slides.map(({ node }, i) => {
-            const { frontmatter, html } = node;
-            const { title, url, company, range } = frontmatter;
-            return (
-              <SwiperSlide key={i}>
-                <StyledTabPanel id={`panel-${i}`} role="tabpanel">
-                  <h3>
-                    <span>{title}</span>
-                    <span className="company">
-                      &nbsp;@&nbsp;
-                      <a href={url} className="inline-link">
-                        {company}
-                      </a>
-                    </span>
-                  </h3>
+        slides.map(({ node }, i) => {
+          const { frontmatter, html } = node;
+          const { title, url, company, range } = frontmatter;
+          return (
+            <SwiperSlide key={i}>
+              <StyledTabPanel id={`panel-${i}`} role="tabpanel">
+                <h3>
+                  <span>{title}</span>
+                  <span className="company">
+                    &nbsp;@&nbsp;
+                    <a href={url} className="inline-link">
+                      {company}
+                    </a>
+                  </span>
+                </h3>
 
-                  <p className="range">{range}</p>
-
-                  <AddScroll dangerouslySetInnerHTML={{ __html: html }} className="addscroll" />
-                </StyledTabPanel>
-              </SwiperSlide>
-            );
-          })}
+                <p className="range">{range}</p>
+                <AddScroll dangerouslySetInnerHTML={{ __html: html }} className="addscroll" />
+              </StyledTabPanel>
+            </SwiperSlide>
+          );
+        })}
     </StyledTabPanels>
   </Swiper>
 );
